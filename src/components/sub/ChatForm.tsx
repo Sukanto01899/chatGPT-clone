@@ -1,4 +1,4 @@
-import { ArrowUp, Paperclip } from "lucide-react";
+import { ArrowUp, Heart, Paperclip } from "lucide-react";
 import { MouseEvent, useRef } from "react";
 
 type ChatFormProps = {
@@ -42,8 +42,12 @@ const ChatForm = ({ setInput, handleSubmit, loading }: ChatFormProps) => {
         </button>
       </form>
 
-      <p className="text-center text-gray-400 py-1 text-sm">
-        ChatGPT can make mistakes. Check important info.
+      <p className="text-center text-gray-400 py-1 text-sm flex items-center justify-center gap-2">
+        Developed By
+        <span className="font-bold bg-gradient-to-r from-green-600 to-pink-600 text-transparent bg-clip-text">
+          Sukanto Das
+        </span>{" "}
+        <Heart className="bg-red-600 h-5 w-5 text-white rounded-full p-1" />
       </p>
     </div>
   );
