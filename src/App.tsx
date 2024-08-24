@@ -19,7 +19,7 @@ function App() {
   const { messages, setMessages } = useMessageContext();
   const [response, setResponse] = useState<MessageProps | null>(null);
   const [question, setQuestion] = useState<MessageProps | null>(null);
-  const { mutation, loading, data, error, setData } = useChat();
+  const { mutation, loading, data, setData } = useChat();
 
   const handleSubmit = async () => {
     const prompt: MessageProps = {
